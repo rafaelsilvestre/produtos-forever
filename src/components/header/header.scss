@@ -1,0 +1,102 @@
+div.header-wrapper{
+    background-color: #516a27;
+    width: 100%;
+
+    div.nav-default{
+        border: solid 1px #728144;
+
+        nav.nav{
+            .nav-link{
+                font-family: 'circular-std-book';
+                font-size: 12px;
+                color: #FFF;
+                text-transform: uppercase;
+                padding: 14px 18px;
+
+                &.active{
+                    color: #e19502;
+                }
+
+                &:last-child{
+                    padding-right: 0;
+                }
+
+                &:first-child{
+                    padding-left: 0;
+                }
+            }
+        }
+    }
+
+    div.brand{
+        padding: 25px 0px;
+
+        img{
+            width: 100px;
+        }
+    }
+
+    div.categories{
+        nav.navbar{
+            background-color: #41541d;
+            padding: 10px 0px;
+
+            ul.navbar-nav.first-nav{
+                position: relative;
+                padding: 10px 0;
+
+                li{
+                    a{
+                        font-family: 'circular-std-book';
+                        font-size: 16px;
+                        color: #FFF;
+                        text-transform: uppercase;
+                        padding: 0px 20px;
+                        position: relative;
+
+                        &:after{
+                            content: "";
+                            width: 1px;
+                            height: 24px;
+                            display: block;
+                            position: absolute;
+                            top: 0px;
+                            right: 0px;
+                            background-color: #526b28;
+                            vertical-align: middle;
+                        }
+                    }
+
+                    &:first-child{
+                        a{
+                            padding-left: 0px;
+                        }
+                    }
+
+                    &:nth-child(5),
+                    &:last-child{
+                        a{
+                            &:after{
+                                content: none;
+                            }
+                        }
+                    }
+                }
+            }
+
+            ul.navbar-nav.last-nav{
+                li{
+                    a{
+                        font-family: 'circular-std-book';
+                        font-size: 16px;
+                        color: #FFF;
+                        text-transform: uppercase;
+                        padding: 10px 25px;
+                        border-radius: 4px;
+                        background-color: #e19502;
+                    }
+                }
+            }
+        }
+    }
+}

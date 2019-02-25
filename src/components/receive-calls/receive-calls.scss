@@ -1,0 +1,73 @@
+div.receive-calls-wrapper{
+    width: 100%;
+    padding: 70px 0px;
+    background-image: url(../../assets/images/aloe-vera-background.jpg);
+    background-color: #4a4a4a;
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position: center center;
+
+    h2{
+        font-family: 'circular-std-bold';
+        font-size: 30px;
+        color: #FFF;
+        text-align: center;
+    }
+
+    p{
+        font-family: 'circular-std-book';
+        font-size: 16px;
+        color: #FFF;
+        max-width: 600px;
+        text-align: center;
+        margin: 15px auto 30px auto;
+    }
+
+    form{
+        width: fit-content;
+        margin: 0px auto;
+
+        input{
+            width: 250px;
+            height: 50px;
+            border-radius: 4px;
+            border: 0;
+            outline: none;
+            background-color: #ffffff;
+            padding: 0px 20px;
+            font-family: 'circular-std-book';
+            font-size: 16px;
+            color: rgba(81, 106, 39, 0.5);
+
+            &::-webkit-input-placeholder{
+                font-family: 'circular-std-book';
+                font-size: 16px;
+                color: rgba(81, 106, 39, 0.5);
+            }
+
+            &:-moz-placeholder{
+                font-family: 'circular-std-book';
+                font-size: 16px;
+                color: rgba(81, 106, 39, 0.5);
+            }
+        }
+
+        button{
+            width: 177px;
+            height: 50px;
+            border-radius: 4px;
+            border: 0;
+            background-color: #e19502;
+            font-family: 'circular-std-bold';
+            font-size: 16px;
+            color: #FFFFFF;
+            text-transform: uppercase;
+            cursor: pointer;
+
+            &:disabled{
+                opacity: 0.5;
+                cursor: initial;
+            }
+        }
+    }
+}

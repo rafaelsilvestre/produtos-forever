@@ -1,0 +1,16 @@
+<div class="receive-calls-wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2>Solicite um orçamento</h2>
+                <p>Teremos o maior prazer em atende-lo. Rapidamente voce receberá contato via whatsapp ou email com as informações solicitadas.</p>
+                <form class="form-inline" [formGroup]="formGroup" (submit)="doSending()">
+                    <input type="text" class="mr-sm-4" formControlName="name" placeholder="Nome Completo">
+                    <input type="text" class="mr-sm-4" formControlName="email" placeholder="Digite seu melhor e-mail:">
+                    <input type="text" class="mr-sm-4" mask [maskPatterns]="phoneMask" formControlName="phone" placeholder="WhatsApp / Celular:">
+                    <button type="submit" [disabled]="!formGroup.valid">Enviar Contato</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,15 @@
+div.carousel-wrapper{
+    .carousel{
+        .carousel-inner{
+            border-radius: 5px;
+
+            .carousel-item{
+                img{
+                    height: 388px;
+                    object-fit: cover;
+                    object-position: left;
+                }
+            }
+        }
+    }
+}
