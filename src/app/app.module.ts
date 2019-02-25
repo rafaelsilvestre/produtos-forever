@@ -9,6 +9,8 @@ import { CarouselComponent } from '../components/carousel/carousel';
 import { ReceiveCallsComponent } from '../components/receive-calls/receive-calls';
 import { FooterComponent } from '../components/footer/footer';
 import { AboutUsComponent } from '../components/about-us/about-us';
+import { BestSellersComponent } from '../components/best-sellers/best-sellers';
+import { ProductItemComponent } from '../components/product-item/product-item';
 
 import { HomePageComponent } from '../pages/home/home';
 import { AboutPageComponent } from '../pages/about/about';
@@ -28,6 +30,8 @@ import { PhoneNumberPipe } from '../pipes/phone-number/phone-number';
         CarouselComponent,
         FooterComponent,
         AboutUsComponent,
+        BestSellersComponent,
+        ProductItemComponent,
         // Pages
         HomePageComponent,
         AboutPageComponent,

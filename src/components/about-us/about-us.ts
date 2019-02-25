@@ -5,7 +5,5 @@ import {Component, Input} from '@angular/core';
     templateUrl: './about-us.html',
     styleUrls: ['./about-us.scss']
 })
-export class AboutUsComponent {
-    @Input() withSeparator: boolean = true;
-}
+export class AboutUsComponent {}
 
