@@ -1,3 +1,28 @@
-div.footer-wrapper{
+@import "../../assets/scss/variables";
 
+div.footer-wrapper{
+    div.copyright-footer{
+        width: 100%;
+        height: 100px;
+        padding: 31px 0px;
+        background: url(../../assets/images/footer-background.png);
+        background-position: left center;
+
+        p{
+            font-family: $circular-book;
+            font-size: 14px;
+            color: #FFF;
+            margin: 0;
+        }
+    }
+
+    div.widgets-footer{
+        width: 100%;
+        padding: 55px 0;
+
+        img{
+            max-width: 121px;
+            width: 100%;
+        }
+    }
 }
