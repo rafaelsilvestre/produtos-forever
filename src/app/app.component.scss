@@ -1,0 +1,55 @@
+div.wrapper{
+    position: relative;
+    button.buy-now {
+        font-family: 'circular-std-book';
+        font-size: 16px;
+        color: #FFF;
+        text-transform: uppercase;
+        text-align: left;
+        padding: 10px 25px;
+        border-radius: 4px;
+        background-color: #e19502;
+        height: 70px;
+        margin: auto;
+        left: 0;
+        right: 0;
+        bottom: 15px;
+        position: fixed;
+        border: 0;
+
+        &:focus,
+        &:active,
+        &:hover {
+            outline: none;
+            text-decoration: none;
+        }
+
+        p {
+            text-transform: lowercase;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            color: #212529;
+        }
+
+        @media (min-width: 1200px){
+            width: 1110px;
+        }
+
+        @media (min-width: 992px) and (max-width: 1200px) {
+            width: 930px;
+        }
+
+        @media (min-width: 768px) and (max-width: 992px){
+            width: 690px;
+        }
+
+        @media (min-width: 576px) and (max-width: 768px){
+            width: 510px;
+        }
+
+        @media (max-width: 576px){
+            width: 90%;
+        }
+    }
+}

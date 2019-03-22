@@ -21,27 +21,57 @@
     <div class="brand">
         <div class="container">
             <div class="row">
-                <div class="col-md-2">
+                <div class="col-md-2 col-3">
                     <a href="javascript:void(0);">
                         <img src="assets/images/logo.png" alt="Produtos Forever">
                     </a>
                 </div>
-                <div class="col-md-10">
-
+                <div class="col-md-10 col-9">
+                    <ul class="owner">
+                        <li>
+                            <a href="javascript:void(0);">
+                                <img src="assets/images/selmo.jpg" alt="Selmo Silvestre">
+                            </a>
+                        </li>
+                        <li>
+                            <p>Selmo Silvestre</p>
+                            <span>Nº FLP</span>
+                            <p class="data">500.000.113.292</p>
+                        </li>
+                        <li>
+                            <span>E-mail</span>
+                            <p class="data">selmocacilda@yahoo.com.br</p>
+                        </li>
+                        <li>
+                            <p class="owner-mobile">Selmo Silvestre</p>
+                            <span>Celular</span>
+                            <a href="http://wa.me/5562981752607" target="_blank">
+                                <p class="data">+55 (62) 98175-2607</p>
+                            </a>
+                        </li>
+                        <li>
+                            <span>Onde estamos?</span>
+                            <p class="data">Goiânia, Goiás</p>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
     </div>
     <div class="categories">
         <nav class="navbar navbar-expand-lg navbar-light">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+            <div class="container button-nav">
+                <div class="col-md-12">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#desk-mobile" aria-controls="desk-mobile" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+            </div>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="collapse navbar-collapse" id="desk-mobile">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-9">
+                        <div class="col-md-9 navbar-desktop">
                             <ul class="navbar-nav first-nav mr-auto">
                                 <li class="nav-item active"><a class="nav-link" href="#">Bebidas <span class="sr-only">(current)</span></a></li>
                                 <li class="nav-item"><a class="nav-link" href="#">Nutrição</a></li>
@@ -50,9 +80,18 @@
                                 <li class="nav-item"><a class="nav-link" href="#">Hidratantes</a></li>
                             </ul>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-md-3 navbar-desktop">
                             <ul class="navbar-nav last-nav mr-auto justify-content-end">
                                 <li class="nav-item"><a class="nav-link" href="#">Comprar Agora</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-md-12">
+                            <ul class="navbar-nav navbar-mobile mr-auto mt-2 mt-lg-0">
+                                <li class="nav-item" [routerLinkActiveOptions]="{ exact: true }" routerLinkActive="active"><a class="nav-link" href="javascript:void(0);" [routerLink]="['/']">Home</a></li>
+                                <li class="nav-item" routerLinkActive="active"><a class="nav-link" href="javascript:void(0);" [routerLink]="['/quem-somos']">Quem Somos</a></li>
+                                <li class="nav-item" routerLinkActive="active"><a class="nav-link" href="javascript:void(0);" [routerLink]="['/quero-ser-parceiro']">Quero ser parceiro</a></li>
+                                <li class="nav-item" routerLinkActive="active"><a class="nav-link" href="javascript:void(0);" [routerLink]="['/fale-conosco']">Contato</a></li>
                             </ul>
                         </div>
                     </div>

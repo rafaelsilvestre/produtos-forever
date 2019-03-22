@@ -1,9 +1,18 @@
+@import "../../assets/scss/variables";
+
+$font-header-size: 16px;
+$margin-list: 45px;
+
 div.header-wrapper{
     background-color: #516a27;
     width: 100%;
 
     div.nav-default{
         border: solid 1px #728144;
+
+        @media(max-width: 767px){
+            display: none;
+        }
 
         nav.nav{
             .nav-link{
@@ -34,12 +43,214 @@ div.header-wrapper{
         img{
             width: 100px;
         }
+
+        ul.owner{
+            padding: 0;
+            margin: 21px 0;
+
+            @media(max-width: 400px){
+                margin: 21px 0;
+            }
+
+            li{
+                list-style-type: none;
+                display: inline-block;
+                vertical-align: bottom;
+
+                &:nth-child(1){
+                    img{
+                        width: 80px;
+                        height: 80px;
+                        border-radius: 50%;
+                    }
+
+                    @media(max-width: 991px){
+                        display: none;
+                    }
+                }
+
+                &:nth-child(2){
+                    margin-left: $margin-list;
+                    p{
+                        font-family: $circular-book;
+                        font-size: $font-header-size;
+                        color: #FFF;
+
+                        &.data{
+                            color: rgba(255, 255, 255, 0.54);
+                            margin: 0;
+                        }
+
+                        &:first-child{
+                            margin-bottom: 5px;
+                        }
+                    }
+
+                    span{
+                        font-family: $circular-bold;
+                        font-size: 18px;
+                        color: #FFF;
+                    }
+
+                    @media(max-width: 503px) {
+                        display: none !important;
+                    }
+                }
+
+                &:nth-child(3){
+                    margin-left: $margin-list;
+                    p{
+                        font-family: $circular-book;
+                        font-size: $font-header-size;
+                        color: #FFF;
+
+                        &.data{
+                            color: rgba(255, 255, 255, 0.54);
+                            margin: 0;
+                        }
+                    }
+
+                    span{
+                        font-family: $circular-bold;
+                        font-size: 18px;
+                        color: #FFF;
+                    }
+
+                    @media(max-width: 1199px){
+                        display: none;
+                    }
+                }
+
+                &:nth-child(4){
+                    margin-left: $margin-list;
+
+                    a{
+                        &:hover,
+                        &:active,
+                        &:focus{
+                            text-decoration: none;
+                        }
+                    }
+
+                    p{
+                        font-family: $circular-book;
+                        font-size: $font-header-size;
+                        color: #FFF;
+
+                        &.owner-mobile{
+                            display: none;
+                            @media(max-width: 503px) {
+                                display: block !important;
+                                margin-bottom: 5px;
+                            }
+                        }
+
+                        &.data{
+                            color: rgba(255, 255, 255, 0.54);
+                            margin: 0;
+                        }
+                    }
+
+                    span{
+                        font-family: $circular-bold;
+                        font-size: 18px;
+                        color: #FFF;
+                    }
+                }
+
+                &:nth-child(5){
+                    margin-left: $margin-list;
+                    p{
+                        font-family: $circular-book;
+                        font-size: $font-header-size;
+                        color: #FFF;
+
+                        &.data{
+                            color: rgba(255, 255, 255, 0.54);
+                            margin: 0;
+                        }
+                    }
+
+                    span{
+                        font-family: $circular-bold;
+                        font-size: 18px;
+                        color: #FFF;
+                    }
+
+                    @media(max-width: 767px){
+                        display: none;
+                    }
+                }
+
+                &:nth-child(6){
+                    margin-left: $margin-list;
+                    p{
+                        font-family: $circular-book;
+                        font-size: $font-header-size;
+                        color: #FFF;
+
+                        &.data{
+                            color: rgba(255, 255, 255, 0.54);
+                            margin: 0;
+                        }
+                    }
+
+                    span{
+                        font-family: $circular-bold;
+                        font-size: 18px;
+                        color: #FFF;
+                    }
+                }
+            }
+        }
     }
 
     div.categories{
         nav.navbar{
             background-color: #41541d;
             padding: 10px 0px;
+
+            .button-nav{
+                @media(min-width: 767px){
+                    display: none;
+                }
+            }
+
+            #desk-mobile{
+                @media(max-width: 767px){
+                    width: 100%;
+                    position: absolute;
+                    background-color: #516a27;
+                    top: 60px;
+                    z-index: 9;
+                }
+
+                .navbar-desktop{
+                    @media(max-width: 767px){
+                        display: none !important;
+                    }
+                }
+
+                .navbar-mobile{
+                    display: none;
+
+                    @media(max-width: 767px){
+                        display: block !important;
+                        margin: 14px 0 !important;
+
+                        li{
+                            a{
+                                font-family: 'circular-std-book';
+                                font-size: 16px;
+                                color: #FFF;
+                                text-transform: uppercase;
+                                padding: 5px 5px;
+                                position: relative;
+                            }
+                        }
+                    }
+                }
+            }
 
             ul.navbar-nav.first-nav{
                 position: relative;

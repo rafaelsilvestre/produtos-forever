@@ -38,6 +38,27 @@ div.receive-calls-wrapper{
             font-family: 'circular-std-book';
             font-size: 16px;
             color: rgba(81, 106, 39, 0.5);
+            margin-right: 20px !important;
+
+
+
+            @media(max-width: 1199px) and (min-width: 767px){
+                width: calc(36% - 36px);
+
+                &:nth-child(3){
+                    margin-right: 0 !important;
+                }
+            }
+
+            @media(max-width: 767px){
+                width: 100%;
+                margin-bottom: 15px;
+                margin-right: 0 !important;
+
+                &:nth-child(3){
+                    margin-bottom: 0 !important;
+                }
+            }
 
             &::-webkit-input-placeholder{
                 font-family: 'circular-std-book';
@@ -63,6 +84,11 @@ div.receive-calls-wrapper{
             color: #FFFFFF;
             text-transform: uppercase;
             cursor: pointer;
+
+            @media(max-width: 1199px){
+                width: 100%;
+                margin-top: 20px;
+            }
 
             &:disabled{
                 opacity: 0.5;
