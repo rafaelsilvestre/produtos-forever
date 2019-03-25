@@ -1,0 +1,11 @@
+<div class="breadcrumb-wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <ul class="breadcrumb-list">
+                    <li *ngFor="let path of paths" [ngClass]="{'active': path.active === true}"><a href="javasript:void(0);" [routerLink]="[path.path]">{{ path.title }}</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

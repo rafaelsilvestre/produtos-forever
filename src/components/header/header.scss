@@ -229,6 +229,12 @@ div.header-wrapper{
                     @media(max-width: 767px){
                         display: none !important;
                     }
+                    
+                    &.last-nav-wrapper{
+                        @media(max-width: 1199px){
+                            display: none;
+                        }
+                    }
                 }
 
                 .navbar-mobile{

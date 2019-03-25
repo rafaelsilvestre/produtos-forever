@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule, ReactiveFormsModule }   from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
@@ -11,6 +11,8 @@ import { FooterComponent } from '../components/footer/footer';
 import { AboutUsComponent } from '../components/about-us/about-us';
 import { BestSellersComponent } from '../components/best-sellers/best-sellers';
 import { ProductItemComponent } from '../components/product-item/product-item';
+import { BuyNowComponent } from '../components/buy-now/buy-now';
+import { BreadcrumbComponent } from '../components/breadcrumb/breadcrumb';
 
 import { HomePageComponent } from '../pages/home/home';
 import { AboutPageComponent } from '../pages/about/about';
@@ -32,6 +34,8 @@ import { PhoneNumberPipe } from '../pipes/phone-number/phone-number';
         AboutUsComponent,
         BestSellersComponent,
         ProductItemComponent,
+        BuyNowComponent,
+        BreadcrumbComponent,
         // Pages
         HomePageComponent,
         AboutPageComponent,
@@ -51,4 +55,5 @@ import { PhoneNumberPipe } from '../pipes/phone-number/phone-number';
     providers: [],
     bootstrap: [AppComponent]
 })
-export class AppModule {}
+export class AppModule {
+}
