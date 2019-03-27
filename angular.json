@@ -33,7 +33,8 @@
                         ],
                         "scripts": [
                             "src/assets/js/jquery.js",
-                            "src/assets/js/bootstrap.js"
+                            "src/assets/js/bootstrap.js",
+                            "./node_modules/clappr/dist/clappr.js"
                         ]
                     },
                     "configurations": {
