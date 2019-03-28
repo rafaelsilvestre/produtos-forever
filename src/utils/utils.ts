@@ -6,9 +6,9 @@ export default class Utils {
     public static getPhoneMask() {
         return function (rawData) {
             const treatedPhone = rawData.replace(/\D+/g, '');
-            if (treatedPhone.length == 11) {
+            if (treatedPhone.length === 11) {
                 return ['(', /\d/, /\d/, ')', ' ', /\d/, /\d/, /\d/, /\d/, /\d/, '-', /\d/, /\d/, /\d/, /\d/];
-            } else if (treatedPhone.length == 0) {
+            } else if (treatedPhone.length === 0) {
                 return '';
             } else {
                 return ['(', /\d/, /\d/, ')', ' ', /\d/, /\d/, /\d/, /\d/, '-', /\d/, /\d/, /\d/, /\d/];

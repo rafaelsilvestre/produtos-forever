@@ -16,10 +16,11 @@ export class WantToBePartnerPageComponent implements AfterViewInit {
         const playerElement = (<any>window).document.getElementById('player-wrapper');
         this.player = new (<any>window).Clappr.Player({
             source: 'https://s3-sa-east-1.amazonaws.com/produtos-forever/want-to-be-partner.mp4',
+            poster: 'assets/images/video-poster.png',
             mute: false,
             height: '100%',
             width: '100%',
-            mediacontrol: {seekbar: "#e19502", buttons: "#e19502"}
+            mediacontrol: {seekbar: '#e19502', buttons: '#e19502'}
         });
         this.player.attachTo(playerElement);
 

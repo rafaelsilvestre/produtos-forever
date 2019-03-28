@@ -7,14 +7,16 @@ div.want-to-be-partner-wrapper{
     div.container{
         div.row{
             div[class^="col-"]{
-                &:first-child{
+                &:nth-child(1){
                     h1.title{
                         font-family: $circular-bold;
                         font-size: 30px;
                         color: #001f12;
                         margin-bottom: 30px;
                     }
+                }
 
+                &:nth-child(2){
                     div.benefits{
                         h2{
                             font-family: $circular-bold;
@@ -49,7 +51,7 @@ div.want-to-be-partner-wrapper{
                     }
                 }
 
-                &:last-child{
+                &:nth-child(3){
                     form{
                         width: 100%;
                         padding: 20px;
