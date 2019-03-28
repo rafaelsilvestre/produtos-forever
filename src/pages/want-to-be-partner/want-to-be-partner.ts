@@ -18,20 +18,20 @@ export class WantToBePartnerPageComponent implements AfterViewInit {
             source: 'https://s3-sa-east-1.amazonaws.com/produtos-forever/want-to-be-partner.mp4',
             mute: false,
             height: '100%',
-            width: '100%'
+            width: '100%',
+            mediacontrol: {seekbar: "#e19502", buttons: "#e19502"}
         });
         this.player.attachTo(playerElement);
 
-        this.resizePlayer();
-        (<any>window).onresize = this.resizePlayer;
-    }
+        const resize = () => {
+            const aspectRatio = 9 / 16;
+            const newWidth = (<any>window).document.getElementById('player-wrapper').parentElement.offsetWidth;
+            const newHeight = 2 * Math.round(newWidth * aspectRatio / 2);
+            this.player.resize({width: (newWidth - 30), height: newHeight});
+        };
 
-    resizePlayer() {
-        const aspectRatio = 9 / 16;
-        const newWidth = (<any>window).document.getElementById('player-wrapper').parentElement.offsetWidth;
-        const newHeight = 2 * Math.round(newWidth * aspectRatio / 2);
-
-        this.player.resize({width: newWidth, height: newHeight});
+        resize();
+        (<any>window).onresize = resize;
     }
 }
 

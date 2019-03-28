@@ -82,13 +82,13 @@
                         </div>
                         <div class="col-xl-3 col-lg-3 col-md-3 col-12 navbar-desktop last-nav-wrapper">
                             <ul class="navbar-nav last-nav mr-auto justify-content-end">
-                                <li class="nav-item"><a class="nav-link" href="#">Comprar Agora</a></li>
+                                <li class="nav-item"><a class="nav-link" href="javascript:void(0);" [routerLink]="['/quero-comprar-agora']">Comprar Agora</a></li>
                             </ul>
                         </div>
 
                         <div class="col-md-12">
                             <ul class="navbar-nav navbar-mobile mr-auto mt-2 mt-lg-0">
-                                <li class="nav-item" [routerLinkActiveOptions]="{ exact: true }" routerLinkActive="active"><a class="nav-link" href="javascript:void(0);" [routerLink]="['/']">Home</a></li>
+                                <li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }"><a class="nav-link" href="javascript:void(0);" [routerLink]="['/']">Home</a></li>
                                 <li class="nav-item" routerLinkActive="active"><a class="nav-link" href="javascript:void(0);" [routerLink]="['/quem-somos']">Quem Somos</a></li>
                                 <li class="nav-item" routerLinkActive="active"><a class="nav-link" href="javascript:void(0);" [routerLink]="['/quero-ser-parceiro']">Quero ser parceiro</a></li>
                                 <li class="nav-item" routerLinkActive="active"><a class="nav-link" href="javascript:void(0);" [routerLink]="['/fale-conosco']">Contato</a></li>

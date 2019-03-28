@@ -5,5 +5,10 @@ import { Component } from '@angular/core';
     templateUrl: './about.html',
     styleUrls: ['./about.scss']
 })
-export class AboutPageComponent {}
+export class AboutPageComponent {
+    path: Array<any> = [
+        {path: '/', title: 'Home'},
+        {path: '/quem-somos', title: 'Quem Somos', active: true}
+    ];
+}
 

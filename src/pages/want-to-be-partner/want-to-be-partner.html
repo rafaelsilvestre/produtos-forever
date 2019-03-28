@@ -38,14 +38,51 @@
             </div>
             <div class="col-md-4">
                 <form action="">
+                    <h2 class="title">Parceria / Informações</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In placerat turpis nunc, et blandit felis rutrum ut.</p>
+
                     <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Nome completo">
+                        <input type="text" placeholder="Nome completo">
                     </div>
                     <div class="form-group">
-                        <input type="email" class="form-control" placeholder="Seu melhor e-mail">
+                        <input type="email" placeholder="Seu melhor e-mail">
                     </div>
                     <div class="form-group">
-                        <input type="tel" class="form-control" placeholder="WhatsApp/ Celular">
+                        <input type="tel" placeholder="WhatsApp/ Celular">
+                    </div>
+                    <h2 class="divider">Seu endereço</h2>
+                    <div class="form-group">
+                        <input type="tel" class="all-border" placeholder="CEP">
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" placeholder="Rua/Avenida/Viela">
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" placeholder="Complemento">
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" placeholder="Estado">
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" placeholder="Cidade">
+                    </div>
+                    <h2 class="divider">O que você precisa?</h2>
+                    <div class="form-group">
+                        <div class="radio">
+                            <input type="radio" name="goal" id="0" checked>
+                            <label class="fas fa-check" for="0"> <span>Descontos</span></label>
+                        </div>
+                        <div class="radio">
+                            <input type="radio" name="goal" id="1">
+                            <label class="fas fa-check" for="1"> <span>Ser um parceiro</span></label>
+                        </div>
+                        <div class="radio">
+                            <input type="radio" name="goal" id="2">
+                            <label class="fas fa-check" for="2"> <span>Obter Informações</span></label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <button [disabled]="false">Enviar Informações</button>
                     </div>
                 </form>
             </div>

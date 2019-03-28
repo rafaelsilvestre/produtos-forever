@@ -18,6 +18,7 @@ import { HomePageComponent } from '../pages/home/home';
 import { AboutPageComponent } from '../pages/about/about';
 import { WantToBePartnerPageComponent } from '../pages/want-to-be-partner/want-to-be-partner';
 import { ContactPageComponent } from '../pages/contact/contact';
+import { BuyNowPageComponent } from '../pages/buy-now/buy-now';
 
 import { InputMaskDirective } from '../directives/input-mask/input-mask';
 
@@ -41,6 +42,7 @@ import { PhoneNumberPipe } from '../pipes/phone-number/phone-number';
         AboutPageComponent,
         WantToBePartnerPageComponent,
         ContactPageComponent,
+        BuyNowPageComponent,
         // Directives
         InputMaskDirective,
         // Pipes

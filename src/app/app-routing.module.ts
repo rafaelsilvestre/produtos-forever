@@ -4,11 +4,13 @@ import { HomePageComponent } from '../pages/home/home';
 import { AboutPageComponent } from '../pages/about/about';
 import { WantToBePartnerPageComponent } from '../pages/want-to-be-partner/want-to-be-partner';
 import { ContactPageComponent } from '../pages/contact/contact';
+import { BuyNowPageComponent } from '../pages/buy-now/buy-now';
 
 const appRoutes: Routes = [
     { path: '',   component: HomePageComponent},
     { path: 'quem-somos',   component: AboutPageComponent},
     { path: 'quero-ser-parceiro',   component: WantToBePartnerPageComponent},
+    { path: 'quero-comprar-agora',   component: BuyNowPageComponent},
     { path: 'fale-conosco',   component: ContactPageComponent},
 ];
 
