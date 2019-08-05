@@ -32,9 +32,10 @@
                             "src/assets/scss/styles.scss"
                         ],
                         "scripts": [
+                            "./node_modules/clappr/dist/clappr.js",
+                            "./node_modules/clappr-stats/dist/clappr-stats.js",
                             "src/assets/js/jquery.js",
-                            "src/assets/js/bootstrap.js",
-                            "./node_modules/clappr/dist/clappr.js"
+                            "src/assets/js/bootstrap.js"
                         ]
                     },
                     "configurations": {

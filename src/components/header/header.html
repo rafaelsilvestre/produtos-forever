@@ -11,7 +11,7 @@
                 </div>
                 <div class="col-md-6">
                     <nav class="nav justify-content-end">
-                        <a class="nav-link" href="javascript:void(0);">Baixe nosso catálogo</a>
+                        <a class="nav-link" href="https://s3-sa-east-1.amazonaws.com/produtos-forever/catalog.pdf" target="_blank">Baixe nosso catálogo</a>
                         <a class="nav-link" href="javascript:void(0);" [routerLink]="['/fale-conosco']" routerLinkActive="active">Fale conosco</a>
                     </nav>
                 </div>
@@ -73,11 +73,9 @@
                     <div class="row">
                         <div class="col-xl-9 col-lg-12 col-md-12 col-12 navbar-desktop first-nav-wrapper">
                             <ul class="navbar-nav first-nav mr-auto">
-                                <li class="nav-item active"><a class="nav-link" href="#">Bebidas <span class="sr-only">(current)</span></a></li>
-                                <li class="nav-item"><a class="nav-link" href="#">Nutrição</a></li>
-                                <li class="nav-item"><a class="nav-link" href="#">Gerenciamento de Peso</a></li>
-                                <li class="nav-item"><a class="nav-link" href="#">Cuidados Pessoais</a></li>
-                                <li class="nav-item"><a class="nav-link" href="#">Hidratantes</a></li>
+                                <li class="nav-item" *ngFor="let page of pages" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+                                    <a class="nav-link" href="javascript:void(0);" [routerLink]="[page.path]">{{ page?.data?.title }} <span class="sr-only">(current)</span></a>
+                                </li>
                             </ul>
                         </div>
                         <div class="col-xl-3 col-lg-3 col-md-3 col-12 navbar-desktop last-nav-wrapper">

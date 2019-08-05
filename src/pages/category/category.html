@@ -1,0 +1,15 @@
+<div class="page-category-wrapper">
+    <div class="banner">
+        <div class="content">
+            <h2>{{ name }}</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut faucibus, risus tempus accumsan convallis, libero tortor vulputate ante, at cursus magna ligula et orci.</p>
+        </div>
+    </div>
+    <div class="products">
+        <div class="container">
+            <div class="row">
+                <product-item *ngFor="let product of products" [product]="product" class="col-xl-3 col-md-4 col-sm-6 col-12"></product-item>
+            </div>
+        </div>
+    </div>
+</div>

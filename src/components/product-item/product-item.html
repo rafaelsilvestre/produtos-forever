@@ -1,6 +1,6 @@
 <div class="product-item-wrapper">
-    <img src="assets/images/aloe-vera-gel.png" class="w-100" alt="">
-    <h2>Aloe Vera Gel</h2>
-    <p>Curabitur sed sagittis odio. Suspendisse dignissim erat magna, a maximus purus finibus at. </p>
-    <a href="javascript:void(0);">Comprar Agora</a>
+    <img [src]="product?.image" class="w-100" alt="" style="width: 205px;height: 240px;margin: 0px auto;display: block;">
+    <h2>{{ product?.name }}</h2>
+    <p>{{ product?.short_description | excerpt:120 }}</p>
+    <button [routerLink]="['/produto', product?.slug]" [disabled]="!product.name">Comprar Agora</button>
 </div>

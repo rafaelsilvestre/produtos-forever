@@ -6,10 +6,7 @@
             </div>
         </div>
         <div class="row">
-            <product-item class="col-xl-3 col-md-4 col-sm-6 col-12"></product-item>
-            <product-item class="col-xl-3 col-md-4 col-sm-6 col-12"></product-item>
-            <product-item class="col-xl-3 col-md-4 col-sm-6 col-12"></product-item>
-            <product-item class="col-xl-3 col-md-4 col-sm-6 col-12"></product-item>
+            <product-item *ngFor="let product of products" [product]="product" class="col-xl-3 col-md-4 col-sm-6 col-12"></product-item>
         </div>
     </div>
 </div>

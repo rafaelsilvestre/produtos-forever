@@ -7,6 +7,8 @@ import { AfterViewInit, Component } from '@angular/core';
 })
 export class WantToBePartnerPageComponent implements AfterViewInit {
     player: any;
+    lastPercentage: number;
+    showModal: boolean = false;
     path: Array<any> = [
         {path: '/', title: 'Home'},
         {path: '/quero-ser-parceiro', title: 'Quero ser parceiro', active: true}
@@ -15,12 +17,32 @@ export class WantToBePartnerPageComponent implements AfterViewInit {
     ngAfterViewInit(): void {
         const playerElement = (<any>window).document.getElementById('player-wrapper');
         this.player = new (<any>window).Clappr.Player({
+            plugins: [(<any>window).ClapprStats],
             source: 'https://s3-sa-east-1.amazonaws.com/produtos-forever/want-to-be-partner.mp4',
             poster: 'assets/images/video-poster.png',
             mute: false,
             height: '100%',
             width: '100%',
-            mediacontrol: {seekbar: '#e19502', buttons: '#e19502'}
+            mediacontrol: {seekbar: '#e19502', buttons: '#e19502'},
+            clapprStats: {
+                runEach: 2000,
+                onReport: (metrics) => {
+                    const percentage = Math.floor(metrics.extra.watchedPercentage);
+
+                    if (percentage === 50 && percentage > this.lastPercentage) {
+                        this.showModal = true;
+                    }
+
+                    if (percentage === 100 && percentage > this.lastPercentage) {
+                        this.showModal = true;
+                    }
+
+                    this.lastPercentage = percentage;
+
+                    console.log('this.lastPercentage', this.lastPercentage);
+                },
+                runBandwidthTestEvery: 10
+            }
         });
         this.player.attachTo(playerElement);
 

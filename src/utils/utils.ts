@@ -1,4 +1,12 @@
+import { CategoryPageComponent } from '../pages/category/category';
+
 export default class Utils {
+
+    public static END_POINT_URL = 'http://endpoint.produtosforever.com.br';
+    public static EP_ALL_PRODUCTS = Utils.END_POINT_URL + '/?products=all';
+    public static EP_BEST_SELLERS_PRODUCTS = Utils.END_POINT_URL + '/?products=best-sellers';
+    public static EP_CATEGORY_PRODUCTS = Utils.END_POINT_URL + '/?products=category&category=';
+
     /**
      * Generates phone mask to use in forms.
      * @returns (rawData:any)

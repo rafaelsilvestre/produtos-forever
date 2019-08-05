@@ -14,6 +14,8 @@ div.header-wrapper{
             display: none;
         }
 
+
+
         nav.nav{
             .nav-link{
                 font-family: 'circular-std-book';
@@ -22,8 +24,35 @@ div.header-wrapper{
                 text-transform: uppercase;
                 padding: 14px 18px;
 
+                &:first-child{
+                    &.active{
+                        &:after{
+                            width: calc(100% - 18px);
+                        }
+                    }
+                }
+
+                &:last-child{
+                    &.active{
+                        &:after{
+                            width: calc(100% - 18px);
+                        }
+                    }
+                }
+
                 &.active{
+                    position: relative;
                     color: #e19502;
+
+                    &:after{
+                        content: "";
+                        width: calc(100% - 36px);
+                        height: 5px;
+                        display: block;
+                        background-color: #e19502;
+                        position: absolute;
+                        bottom: -5px;
+                    }
                 }
 
                 &:last-child{
@@ -284,9 +313,30 @@ div.header-wrapper{
                         }
                     }
 
+                    &.active{
+                        position: relative;
+
+                        &:after{
+                            content: '';
+                            width: 60%;
+                            height: 6px;
+                            display: block;
+                            background-color: #e19502;
+                            position: absolute;
+                            left: 0;
+                            right: 0;
+                            margin: auto;
+                            bottom: -20px;
+                        }
+                    }
+
                     &:first-child{
                         a{
                             padding-left: 0px;
+                        }
+
+                        &:after{
+                            left: -20px;
                         }
                     }
 
